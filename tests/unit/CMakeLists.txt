@@ -20,7 +20,8 @@ if(BUILD_TESTS)
                     PRIVATE
                     sylarx
                     GTest::GTest
-                    GTest::Main
+                    # GTest::Main
+                    fmt::fmt
                 )
                 add_test(NAME ${test_name} COMMAND ${test_name})
             endforeach()

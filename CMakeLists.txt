@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 project(SylarX LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 设置安装前缀为项目目录下的install文件夹
@@ -16,6 +16,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 find_package(GTest REQUIRED)
+find_package(fmt REQUIRED)
 
 
 add_subdirectory(src)
